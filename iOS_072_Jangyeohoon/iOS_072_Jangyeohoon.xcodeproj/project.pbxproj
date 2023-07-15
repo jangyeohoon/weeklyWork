@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FFC54882A512C82002A407F /* iOS_072_JangyeohoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFC54872A512C82002A407F /* iOS_072_JangyeohoonApp.swift */; };
-		3FFC548A2A512C82002A407F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFC54892A512C82002A407F /* ContentView.swift */; };
-		3FFC548C2A512C82002A407F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFC548B2A512C82002A407F /* Assets.xcassets */; };
-		3FFC548F2A512C82002A407F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFC548E2A512C82002A407F /* Preview Assets.xcassets */; };
+		3F4E9C712A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E9C702A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift */; };
+		3F4E9C732A61976F00D3F2DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E9C722A61976F00D3F2DF /* ContentView.swift */; };
+		3F4E9C752A61976F00D3F2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E9C742A61976F00D3F2DF /* Assets.xcassets */; };
+		3F4E9C782A61976F00D3F2DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E9C772A61976F00D3F2DF /* Preview Assets.xcassets */; };
+		3F4E9C7F2A6197A400D3F2DF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E9C7E2A6197A400D3F2DF /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3FFC54842A512C82002A407F /* iOS_072_Jangyeohoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_072_Jangyeohoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FFC54872A512C82002A407F /* iOS_072_JangyeohoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_072_JangyeohoonApp.swift; sourceTree = "<group>"; };
-		3FFC54892A512C82002A407F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3FFC548B2A512C82002A407F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FFC548E2A512C82002A407F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F4E9C6D2A61976F00D3F2DF /* iOS_072_Jangyeohoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_072_Jangyeohoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4E9C702A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_072_JangyeohoonApp.swift; sourceTree = "<group>"; };
+		3F4E9C722A61976F00D3F2DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F4E9C742A61976F00D3F2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F4E9C772A61976F00D3F2DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F4E9C7E2A6197A400D3F2DF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3FFC54812A512C82002A407F /* Frameworks */ = {
+		3F4E9C6A2A61976F00D3F2DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3FFC547B2A512C82002A407F = {
+		3F4E9C642A61976F00D3F2DF = {
 			isa = PBXGroup;
 			children = (
-				3FFC54862A512C82002A407F /* iOS_072_Jangyeohoon */,
-				3FFC54852A512C82002A407F /* Products */,
+				3F4E9C6F2A61976F00D3F2DF /* iOS_072_Jangyeohoon */,
+				3F4E9C6E2A61976F00D3F2DF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3FFC54852A512C82002A407F /* Products */ = {
+		3F4E9C6E2A61976F00D3F2DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FFC54842A512C82002A407F /* iOS_072_Jangyeohoon.app */,
+				3F4E9C6D2A61976F00D3F2DF /* iOS_072_Jangyeohoon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3FFC54862A512C82002A407F /* iOS_072_Jangyeohoon */ = {
+		3F4E9C6F2A61976F00D3F2DF /* iOS_072_Jangyeohoon */ = {
 			isa = PBXGroup;
 			children = (
-				3FFC54872A512C82002A407F /* iOS_072_JangyeohoonApp.swift */,
-				3FFC54892A512C82002A407F /* ContentView.swift */,
-				3FFC548B2A512C82002A407F /* Assets.xcassets */,
-				3FFC548D2A512C82002A407F /* Preview Content */,
+				3F4E9C702A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift */,
+				3F4E9C722A61976F00D3F2DF /* ContentView.swift */,
+				3F4E9C7E2A6197A400D3F2DF /* Model.swift */,
+				3F4E9C742A61976F00D3F2DF /* Assets.xcassets */,
+				3F4E9C762A61976F00D3F2DF /* Preview Content */,
 			);
 			path = iOS_072_Jangyeohoon;
 			sourceTree = "<group>";
 		};
-		3FFC548D2A512C82002A407F /* Preview Content */ = {
+		3F4E9C762A61976F00D3F2DF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3FFC548E2A512C82002A407F /* Preview Assets.xcassets */,
+				3F4E9C772A61976F00D3F2DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3FFC54832A512C82002A407F /* iOS_072_Jangyeohoon */ = {
+		3F4E9C6C2A61976F00D3F2DF /* iOS_072_Jangyeohoon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FFC54922A512C82002A407F /* Build configuration list for PBXNativeTarget "iOS_072_Jangyeohoon" */;
+			buildConfigurationList = 3F4E9C7B2A61976F00D3F2DF /* Build configuration list for PBXNativeTarget "iOS_072_Jangyeohoon" */;
 			buildPhases = (
-				3FFC54802A512C82002A407F /* Sources */,
-				3FFC54812A512C82002A407F /* Frameworks */,
-				3FFC54822A512C82002A407F /* Resources */,
+				3F4E9C692A61976F00D3F2DF /* Sources */,
+				3F4E9C6A2A61976F00D3F2DF /* Frameworks */,
+				3F4E9C6B2A61976F00D3F2DF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +87,25 @@
 			);
 			name = iOS_072_Jangyeohoon;
 			productName = iOS_072_Jangyeohoon;
-			productReference = 3FFC54842A512C82002A407F /* iOS_072_Jangyeohoon.app */;
+			productReference = 3F4E9C6D2A61976F00D3F2DF /* iOS_072_Jangyeohoon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3FFC547C2A512C82002A407F /* Project object */ = {
+		3F4E9C652A61976F00D3F2DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					3FFC54832A512C82002A407F = {
+					3F4E9C6C2A61976F00D3F2DF = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 3FFC547F2A512C82002A407F /* Build configuration list for PBXProject "iOS_072_Jangyeohoon" */;
+			buildConfigurationList = 3F4E9C682A61976F00D3F2DF /* Build configuration list for PBXProject "iOS_072_Jangyeohoon" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +113,43 @@
 				en,
 				Base,
 			);
-			mainGroup = 3FFC547B2A512C82002A407F;
-			productRefGroup = 3FFC54852A512C82002A407F /* Products */;
+			mainGroup = 3F4E9C642A61976F00D3F2DF;
+			productRefGroup = 3F4E9C6E2A61976F00D3F2DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3FFC54832A512C82002A407F /* iOS_072_Jangyeohoon */,
+				3F4E9C6C2A61976F00D3F2DF /* iOS_072_Jangyeohoon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3FFC54822A512C82002A407F /* Resources */ = {
+		3F4E9C6B2A61976F00D3F2DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FFC548F2A512C82002A407F /* Preview Assets.xcassets in Resources */,
-				3FFC548C2A512C82002A407F /* Assets.xcassets in Resources */,
+				3F4E9C782A61976F00D3F2DF /* Preview Assets.xcassets in Resources */,
+				3F4E9C752A61976F00D3F2DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3FFC54802A512C82002A407F /* Sources */ = {
+		3F4E9C692A61976F00D3F2DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FFC548A2A512C82002A407F /* ContentView.swift in Sources */,
-				3FFC54882A512C82002A407F /* iOS_072_JangyeohoonApp.swift in Sources */,
+				3F4E9C7F2A6197A400D3F2DF /* Model.swift in Sources */,
+				3F4E9C732A61976F00D3F2DF /* ContentView.swift in Sources */,
+				3F4E9C712A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3FFC54902A512C82002A407F /* Debug */ = {
+		3F4E9C792A61976F00D3F2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		3FFC54912A512C82002A407F /* Release */ = {
+		3F4E9C7A2A61976F00D3F2DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +263,7 @@
 			};
 			name = Release;
 		};
-		3FFC54932A512C82002A407F /* Debug */ = {
+		3F4E9C7C2A61976F00D3F2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -288,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		3FFC54942A512C82002A407F /* Release */ = {
+		3F4E9C7D2A61976F00D3F2DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,25 +324,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FFC547F2A512C82002A407F /* Build configuration list for PBXProject "iOS_072_Jangyeohoon" */ = {
+		3F4E9C682A61976F00D3F2DF /* Build configuration list for PBXProject "iOS_072_Jangyeohoon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FFC54902A512C82002A407F /* Debug */,
-				3FFC54912A512C82002A407F /* Release */,
+				3F4E9C792A61976F00D3F2DF /* Debug */,
+				3F4E9C7A2A61976F00D3F2DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FFC54922A512C82002A407F /* Build configuration list for PBXNativeTarget "iOS_072_Jangyeohoon" */ = {
+		3F4E9C7B2A61976F00D3F2DF /* Build configuration list for PBXNativeTarget "iOS_072_Jangyeohoon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FFC54932A512C82002A407F /* Debug */,
-				3FFC54942A512C82002A407F /* Release */,
+				3F4E9C7C2A61976F00D3F2DF /* Debug */,
+				3F4E9C7D2A61976F00D3F2DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3FFC547C2A512C82002A407F /* Project object */;
+	rootObject = 3F4E9C652A61976F00D3F2DF /* Project object */;
 }
