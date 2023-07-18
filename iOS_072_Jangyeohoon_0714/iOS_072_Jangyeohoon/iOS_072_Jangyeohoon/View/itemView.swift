@@ -28,9 +28,9 @@ struct itemView: View {
                 
                 Text("\(pockemon.name)")
                     .bold()
-                
             }
         }
+        .shadow(radius: 10)
     }
 }
 

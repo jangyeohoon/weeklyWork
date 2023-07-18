@@ -22,7 +22,6 @@ class PockemonStore: ObservableObject {
         pockemon.imagePath = imagePath
         
         pockemons.insert(pockemon, at: 0)
-        
     }
     
     func fetchStickers() {

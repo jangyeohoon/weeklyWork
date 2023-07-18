@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var pockemonStore: PockemonStore = PockemonStore()
-    @State var pockemon: Pockemon = Pockemon(name: "이상해씨", imagePath: "")
+    @State var pockemon: Pockemon = Pockemon(name: "이상해씨", imagePath: "https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000101.png")
     @State var isShowingAddSheet: Bool = false
     
     var body: some View {
@@ -17,7 +17,7 @@ struct ContentView: View {
             VStack {
                 List(pockemonStore.pockemons) { pockemon in
                     Button {
-                        self.pockemon = pockemon
+                        
                     } label: {
                         itemView(pockemonStore: pockemonStore, pockemon: pockemon)
                     }
@@ -36,13 +36,6 @@ struct ContentView: View {
             }
             .sheet(isPresented: $isShowingAddSheet) {
                 AddView(isShowingSheet: $isShowingAddSheet, pockemonStore: pockemonStore)
-            }
-            
-            .refreshable {
-                pockemonStore.fetchStickers()
-            }
-            .onAppear {
-                pockemonStore.fetchStickers()
             }
         }
     }
