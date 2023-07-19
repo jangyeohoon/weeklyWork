@@ -11,6 +11,7 @@
 		3F154CA12A63BC5100453C7D /* PockemonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F154CA02A63BC5100453C7D /* PockemonStore.swift */; };
 		3F1FF7372A6588F500DA3BB6 /* itemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FF7362A6588F500DA3BB6 /* itemView.swift */; };
 		3F1FF7392A65890000DA3BB6 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FF7382A65890000DA3BB6 /* AddView.swift */; };
+		3F4DCFE82A682F40000C58C5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4DCFE72A682F40000C58C5 /* DetailView.swift */; };
 		3F4E9C712A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E9C702A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift */; };
 		3F4E9C732A61976F00D3F2DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E9C722A61976F00D3F2DF /* ContentView.swift */; };
 		3F4E9C752A61976F00D3F2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E9C742A61976F00D3F2DF /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		3F154CA02A63BC5100453C7D /* PockemonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonStore.swift; sourceTree = "<group>"; };
 		3F1FF7362A6588F500DA3BB6 /* itemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemView.swift; sourceTree = "<group>"; };
 		3F1FF7382A65890000DA3BB6 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		3F4DCFE72A682F40000C58C5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3F4E9C6D2A61976F00D3F2DF /* iOS_072_Jangyeohoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_072_Jangyeohoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4E9C702A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_072_JangyeohoonApp.swift; sourceTree = "<group>"; };
 		3F4E9C722A61976F00D3F2DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				3F4E9C722A61976F00D3F2DF /* ContentView.swift */,
 				3F1FF7362A6588F500DA3BB6 /* itemView.swift */,
+				3F4DCFE72A682F40000C58C5 /* DetailView.swift */,
 				3F1FF7382A65890000DA3BB6 /* AddView.swift */,
 			);
 			path = View;
@@ -168,6 +171,7 @@
 				3F1FF7392A65890000DA3BB6 /* AddView.swift in Sources */,
 				3F4E9C732A61976F00D3F2DF /* ContentView.swift in Sources */,
 				3F154C9F2A63BAE200453C7D /* Pockemon.swift in Sources */,
+				3F4DCFE82A682F40000C58C5 /* DetailView.swift in Sources */,
 				3F1FF7372A6588F500DA3BB6 /* itemView.swift in Sources */,
 				3F4E9C712A61976F00D3F2DF /* iOS_072_JangyeohoonApp.swift in Sources */,
 				3F154CA12A63BC5100453C7D /* PockemonStore.swift in Sources */,

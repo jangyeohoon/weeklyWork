@@ -20,7 +20,7 @@ struct AddView: View {
             VStack(alignment: .leading) {
                 List(pockemon) { pockemon in
                     Button {
-                        pockemonStore.addPockemon(name: name, imagePath: imagePath)
+                        pockemonStore.addPockemon(name: pockemon.name, imagePath: pockemon.imagePath)
                         isShowingSheet = false
                     } label: {
                         itemView(pockemonStore: pockemonStore, pockemon: pockemon)
@@ -29,7 +29,7 @@ struct AddView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Cancel") {
+                    Button("취소") {
                         isShowingSheet = false
                     }
                 }

@@ -16,8 +16,8 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 List(pockemonStore.pockemons) { pockemon in
-                    Button {
-                        
+                    NavigationLink {
+                        DetailView(pockemon: pockemon)
                     } label: {
                         itemView(pockemonStore: pockemonStore, pockemon: pockemon)
                     }
@@ -37,8 +37,12 @@ struct ContentView: View {
             .sheet(isPresented: $isShowingAddSheet) {
                 AddView(isShowingSheet: $isShowingAddSheet, pockemonStore: pockemonStore)
             }
+            //           .onAppear {
+            //                pockemonStore.fetchPockemon()
+            //            }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -10,7 +10,7 @@ import SwiftUI
 struct itemView: View {
     
     var pockemonStore: PockemonStore
-    let pockemon: Pockemon
+    var pockemon: Pockemon
     
     var body: some View {
         HStack {
