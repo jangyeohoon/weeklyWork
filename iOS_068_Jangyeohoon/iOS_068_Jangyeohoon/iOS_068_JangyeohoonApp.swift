@@ -11,7 +11,7 @@ import SwiftUI
 struct iOS_068_JangyeohoonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(number: 0)
         }
     }
 }
