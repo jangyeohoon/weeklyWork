@@ -10,37 +10,47 @@
 import SwiftUI
 
 struct CountView: View {
-    
+    var countStore: CountStore
     @State var number: Int
     
     var body: some View {
         NavigationStack {
-            VStack {
+            Grid {
                 Button {
                     toggleButton()
                 } label: {
                     Text("\(number)")
-                        .font(.system(size: 550))
+                        .font(.system(size: 150))
                 }
-                .frame(width: 350, height: 500)
+                .frame(width: 350, height: 450)
                 .background(Color.blue)
                 .foregroundColor(.white)
                 .cornerRadius(10)
                 
-                
-                HStack {
+                GridRow {
                     Button {
                         resetButton()
                     } label: {
                         Text("초기화")
-                    }.padding()
+                    }
+                    .padding()
+                    .frame(width: 100, height: 30)
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .cornerRadius(5)
                     
                     Button {
-                        
+                        countStore.countingData(number: number)
                     } label: {
                         Text("저장")
-                    }.padding()
-                }.padding()
+                    }
+                    .padding()
+                    .frame(width: 100, height: 30)
+                    .background(Color.yellow)
+                    .foregroundColor(.white)
+                    .cornerRadius(5)
+                }
+                
                 
                 HStack {
                     Button {
@@ -50,6 +60,10 @@ struct CountView: View {
                     }
                     
                 }
+                .frame(width: 208, height: 30)
+                .background(Color.red)
+                .foregroundColor(.white)
+                .cornerRadius(5)
                 
                 .padding()
                 
@@ -67,14 +81,16 @@ struct CountView: View {
     }
     
     func minusNumber() {
-        number -= 1
+        if number > 0 {
+            number -= 1
+        }
     }
 }
 
 struct CountView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CountView(number: 0)
+            CountView(countStore: CountStore(), number: 0)
         }
     }
 }

@@ -28,7 +28,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $tabIndex) {
             NavigationStack{
-                CountView(number: number)
+                CountView(countStore: CountStore(), number: number)
             }
             .tabItem {
                 Image(systemName: "stopwatch")

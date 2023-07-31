@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Count: Codable {
+struct Count: Codable, Identifiable {
     var id: UUID = UUID()
     var number: Int
     var date: Date

@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct CountListView: View {
+    @StateObject var countStore: CountStore = CountStore()
+    @State var count: Count = Count(number: 99, date: Date())
     
     var body: some View {
         NavigationStack {
-            List() {
-                Text("ddfd")
+            VStack {
+                List(countStore.countData) { number in
+                    Button {
+                        self.count = count
+                    } label: {
+                        CountListDetailView(countStore: countStore, number: number)
+                    }
+                    
+                }
             }
+            .listStyle(.plain)
             .navigationTitle("Data")
-
         }
     }
 }

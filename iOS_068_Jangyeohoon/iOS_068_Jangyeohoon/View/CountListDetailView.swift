@@ -9,27 +9,30 @@ import SwiftUI
 
 struct CountListDetailView: View {
     
-//    let count: Count
-//    var CountStore: CountStore
+    var countStore: CountStore
+    var number: Count
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("123")
+                Text("\(number.number)")
                     .font(.title)
                     .padding()
                 
-                Text("234")
+                Text("\(number.dateString)")
                     .font(.footnote)
                     .padding()
             }
             Spacer()
         }
+        .background(.blue)
+        .shadow(radius: 6)
+        .padding()
     }
 }
 
 struct CountListDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CountListDetailView()
+        CountListDetailView(countStore: CountStore(), number: Count(number: 10, date: Date()))
     }
 }
