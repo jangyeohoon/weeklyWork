@@ -9,22 +9,44 @@ import SwiftUI
 
 struct CountListView: View {
     @EnvironmentObject var countStore: CountStore
-    @State var count: Count = Count(number: 99, date: Date())
     
     var body: some View {
         NavigationStack {
             VStack {
-                List(countStore.countData) { number in
-                    Button {
-                        self.count = count
-                    } label: {
-                        CountListDetailView(number: number)
+                List{
+                    ForEach(countStore.countData) { number in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("\(number.number)")
+                                Text("\(number.dateString)")
+                            }
+                        }
+                        .shadow(radius: 5)
                     }
-                    
+                    .onDelete { indexSet in
+                        countStore.deleteItem(at: indexSet)
+                    }
                 }
             }
             .listStyle(.plain)
             .navigationTitle("Data")
+            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        countStore.reset()
+                    } label: {
+                        Text("초기화")
+                    }
+                }
+            }
+            
+            .refreshable {
+                countStore.fetchCounts()
+            }
+            .onAppear {
+                countStore.fetchCounts()
+            }
         }
     }
 }

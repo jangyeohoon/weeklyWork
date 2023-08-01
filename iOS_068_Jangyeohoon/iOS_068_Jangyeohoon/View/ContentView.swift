@@ -22,13 +22,12 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var countStore: CountStore
-    @State var number: Int
     @State var tabIndex: Int = 0
     
     var body: some View {
         TabView(selection: $tabIndex) {
             NavigationStack{
-                CountView(number: number)
+                CountView()
             }
             .tabItem {
                 Image(systemName: "stopwatch")
@@ -55,7 +54,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(number: 0)
+        ContentView()
             .environmentObject(CountStore())
     }
 }

@@ -10,7 +10,11 @@ import SwiftUI
 struct InfoView: View {
     var body: some View {
         NavigationStack {
-            Text("This is Info View")
+            Text("제작: 장여훈")
+            Divider()
+            
+            Text(" 2023년 8월 1일 화요일")
+            
                 .navigationTitle("Information")
         }
     }

@@ -16,7 +16,6 @@
 		3FA349742A761AD600D5B4BD /* CountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA349732A761AD600D5B4BD /* CountStore.swift */; };
 		3FA349762A762AE300D5B4BD /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA349752A762AE300D5B4BD /* Count.swift */; };
 		3FA349792A7631E300D5B4BD /* CountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA349782A7631E300D5B4BD /* CountListView.swift */; };
-		3FA3497B2A7631F000D5B4BD /* CountListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3497A2A7631F000D5B4BD /* CountListDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		3FA349732A761AD600D5B4BD /* CountStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountStore.swift; sourceTree = "<group>"; };
 		3FA349752A762AE300D5B4BD /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
 		3FA349782A7631E300D5B4BD /* CountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountListView.swift; sourceTree = "<group>"; };
-		3FA3497A2A7631F000D5B4BD /* CountListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountListDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 				3F34F20A2A7515A60036A181 /* ContentView.swift */,
 				3FA3496A2A76154400D5B4BD /* CountView.swift */,
 				3FA349782A7631E300D5B4BD /* CountListView.swift */,
-				3FA3497A2A7631F000D5B4BD /* CountListDetailView.swift */,
 				3FA3496E2A76155800D5B4BD /* InfoView.swift */,
 			);
 			path = View;
@@ -173,7 +170,6 @@
 			files = (
 				3F34F20B2A7515A60036A181 /* ContentView.swift in Sources */,
 				3F34F2092A7515A60036A181 /* iOS_068_JangyeohoonApp.swift in Sources */,
-				3FA3497B2A7631F000D5B4BD /* CountListDetailView.swift in Sources */,
 				3FA3496F2A76155800D5B4BD /* InfoView.swift in Sources */,
 				3FA349762A762AE300D5B4BD /* Count.swift in Sources */,
 				3FA3496B2A76154400D5B4BD /* CountView.swift in Sources */,

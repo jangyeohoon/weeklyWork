@@ -12,15 +12,13 @@ import SwiftUI
 struct CountView: View {
     @EnvironmentObject var countStore: CountStore
     
-    @ObservedObject var number: Count = Count
-    
     var body: some View {
         NavigationStack {
             Grid {
                 Button {
                     toggleButton()
                 } label: {
-                    Text("\(number)")
+                    Text("\(countStore.number)")
                         .font(.system(size: 150))
                 }
                 .frame(width: 350, height: 450)
@@ -41,7 +39,7 @@ struct CountView: View {
                     .cornerRadius(5)
                     
                     Button {
-                        countStore.countingData(number: number)
+                        countStore.countingData()
                     } label: {
                         Text("저장")
                     }
@@ -74,16 +72,16 @@ struct CountView: View {
     }
     
     func toggleButton() {
-        number += 1
+        countStore.number += 1
     }
     
     func resetButton() {
-        number = 0
+        countStore.number = 0
     }
     
     func minusNumber() {
-        if number > 0 {
-            number -= 1
+        if countStore.number > 0 {
+            countStore.number -= 1
         }
     }
 }
@@ -91,7 +89,7 @@ struct CountView: View {
 struct CountView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CountView(number: 0)
+            CountView()
                 .environmentObject(CountStore())
         }
     }

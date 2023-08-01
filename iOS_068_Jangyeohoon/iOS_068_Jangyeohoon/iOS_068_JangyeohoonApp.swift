@@ -14,7 +14,7 @@ struct iOS_068_JangyeohoonApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(number: 0)
+            ContentView()
                 .environmentObject(countStore)
         }
     }

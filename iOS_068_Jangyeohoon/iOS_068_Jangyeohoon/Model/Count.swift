@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Count: Codable, Identifiable {
     var id: UUID = UUID()
-    var number: Int = 0
+    var number: Int
     var date: Date
     
     var dateString: String {
