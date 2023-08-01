@@ -10,7 +10,7 @@ import SwiftUI
 
 class CountStore: ObservableObject {
     
-    
+    @Published var number: Count
     // @Published 속성 래퍼를 사용하여 countData 배열을 관찰 가능한 속성으로 만든다, 변경 발생시 알림 생성
     @Published var countData: [Count] = []
     
@@ -18,6 +18,7 @@ class CountStore: ObservableObject {
         countData = [
         
         ]
+        self.number = number
     }
     
     func countingData(number: Int) {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CountListView: View {
-    @StateObject var countStore: CountStore = CountStore()
+    @EnvironmentObject var countStore: CountStore
     @State var count: Count = Count(number: 99, date: Date())
     
     var body: some View {
@@ -18,7 +18,7 @@ struct CountListView: View {
                     Button {
                         self.count = count
                     } label: {
-                        CountListDetailView(countStore: countStore, number: number)
+                        CountListDetailView(number: number)
                     }
                     
                 }
@@ -33,6 +33,7 @@ struct CountListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             CountListView()
+                .environmentObject(CountStore())
         }
     }
 }

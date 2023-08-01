@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct iOS_068_JangyeohoonApp: App {
+    
+    let countStore: CountStore = CountStore()
+    
     var body: some Scene {
         WindowGroup {
             ContentView(number: 0)
+                .environmentObject(countStore)
         }
     }
 }

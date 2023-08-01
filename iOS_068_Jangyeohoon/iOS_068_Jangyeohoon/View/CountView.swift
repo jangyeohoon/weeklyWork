@@ -10,8 +10,9 @@
 import SwiftUI
 
 struct CountView: View {
-    var countStore: CountStore
-    @State var number: Int
+    @EnvironmentObject var countStore: CountStore
+    
+    @ObservedObject var number: Count = Count
     
     var body: some View {
         NavigationStack {
@@ -90,7 +91,8 @@ struct CountView: View {
 struct CountView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CountView(countStore: CountStore(), number: 0)
+            CountView(number: 0)
+                .environmentObject(CountStore())
         }
     }
 }

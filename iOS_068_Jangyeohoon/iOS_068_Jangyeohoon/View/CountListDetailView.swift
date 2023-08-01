@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CountListDetailView: View {
     
-    var countStore: CountStore
+    @EnvironmentObject var countStore: CountStore
     var number: Count
     
     var body: some View {
@@ -17,22 +17,16 @@ struct CountListDetailView: View {
             VStack(alignment: .leading) {
                 Text("\(number.number)")
                     .font(.title)
-                    .padding()
                 
                 Text("\(number.dateString)")
                     .font(.footnote)
-                    .padding()
             }
-            Spacer()
         }
-        .background(.blue)
-        .shadow(radius: 6)
-        .padding()
     }
 }
 
 struct CountListDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CountListDetailView(countStore: CountStore(), number: Count(number: 10, date: Date()))
+        CountListDetailView(number: Count(number: 0, date: Date()))
     }
 }
